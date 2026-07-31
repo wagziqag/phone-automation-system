@@ -1,7 +1,8 @@
 
 import json, os, subprocess, base64, urllib.request
+import os
 
-T="be94810b75731a166c301f752d5348e8"
+T = os.environ.get("GITEE_TOKEN", "")
 result = {}
 
 def sh(cmd, timeout=15):
