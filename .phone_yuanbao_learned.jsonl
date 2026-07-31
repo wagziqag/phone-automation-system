@@ -1,0 +1,5 @@
+{"ts": "2026-07-27T10:00:00", "session": "a1", "topic": "Termux性能优化", "source": "yuanbao", "fact": "使用 proot-distro 替代 chroot 减少 30% overhead"}
+{"ts": "2026-07-27T10:00:00", "session": "a1", "topic": "Termux性能优化", "source": "yuanbao", "fact": "关闭 termux-wake-lock 可节省 200MB 内存"}
+{"ts": "2026-07-27T10:00:00", "session": "a1", "topic": "Termux性能优化", "source": "yuanbao", "fact": "pkg install proot-distro 然后 proot-distro install ubuntu"}
+{"ts": "2026-07-28T08:00:00", "session": "b2", "topic": "Android权限", "source": "yuanbao", "fact": "termux-setup-storage 授权后访问 /sdcard 无需 root"}
+{"ts": "2026-07-28T08:00:00", "session": "b2", "topic": "Android权限", "source": "yuanbao", "fact": "rish 通过 ADB 提权比 su 更稳定"}
