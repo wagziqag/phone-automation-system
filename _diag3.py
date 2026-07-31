@@ -1,7 +1,7 @@
 
-import json, subprocess, base64, urllib.request
+import json, os, subprocess, base64, urllib.request
 
-T="be94810b75731a166c301f752d5348e8"
+T = os.environ.get("GITEE_TOKEN", "")
 result = {}
 
 def sh(cmd, timeout=10):
@@ -29,6 +29,7 @@ result["rapidocr_retest2"] = (out + "\n" + err)[:300]
 # 先打开微博
 rc, out, _ = sh("adb shell monkey -p com.sina.weibo -c android.intent.category.LAUNCHER 1 2>&1")
 import time; time.sleep(4)
+import os
 rc, out, _ = sh("adb shell screencap -p /sdcard/weibo_screen.png 2>&1")
 rc, out, _ = sh("tesseract /sdcard/weibo_screen.png stdout -l chi_sim+eng --psm 6 2>&1")
 result["weibo_ocr"] = out[:600] if out else "EMPTY"
