@@ -1,0 +1,136 @@
+{
+  "facts": {
+    "a4e0a906e7e5": {
+      "content": "使用 proot-distro 替代 chroot 减少 30% overhead",
+      "source": "yuanbao/Termux性能优化",
+      "tags": [
+        "Termux性能优化",
+        "yuanbao"
+      ],
+      "ts": "2026-07-28T00:18:35",
+      "ts_epoch": 1785169115.693997,
+      "confidence": 1.0,
+      "recall_count": 1
+    },
+    "78422aba9e66": {
+      "content": "关闭 termux-wake-lock 可节省 200MB 内存",
+      "source": "yuanbao/Termux性能优化",
+      "tags": [
+        "Termux性能优化",
+        "yuanbao"
+      ],
+      "ts": "2026-07-28T00:18:35",
+      "ts_epoch": 1785169115.6951036,
+      "confidence": 1.0,
+      "recall_count": 1
+    },
+    "4204fa7ecb37": {
+      "content": "pkg install proot-distro 然后 proot-distro install ubuntu",
+      "source": "yuanbao/Termux性能优化",
+      "tags": [
+        "Termux性能优化",
+        "yuanbao"
+      ],
+      "ts": "2026-07-28T00:18:35",
+      "ts_epoch": 1785169115.6961079,
+      "confidence": 1.0,
+      "recall_count": 1
+    },
+    "a2b247cbed63": {
+      "content": "termux-setup-storage 授权后访问 /sdcard 无需 root",
+      "source": "yuanbao/Android权限",
+      "tags": [
+        "Android权限",
+        "yuanbao"
+      ],
+      "ts": "2026-07-28T00:18:35",
+      "ts_epoch": 1785169115.697117,
+      "confidence": 1.0,
+      "recall_count": 1
+    },
+    "6a7324350c27": {
+      "content": "rish 通过 ADB 提权比 su 更稳定",
+      "source": "yuanbao/Android权限",
+      "tags": [
+        "Android权限",
+        "yuanbao"
+      ],
+      "ts": "2026-07-28T00:18:35",
+      "ts_epoch": 1785169115.6981096,
+      "confidence": 1.0,
+      "recall_count": 1
+    }
+  },
+  "patterns": {
+    "a1e39ff6": {
+      "name": "whoami",
+      "template": "whoami",
+      "context": {
+        "level": "TRIVIAL",
+        "elapsed_ms": 35
+      },
+      "created": "2026-07-28T00:18:35",
+      "last_used": "2026-07-28T00:18:35",
+      "use_count": 3
+    },
+    "19ac5f1b": {
+      "name": "free -h",
+      "template": "free -h",
+      "context": {
+        "level": "SIMPLE",
+        "elapsed_ms": 65
+      },
+      "created": "2026-07-28T00:18:35",
+      "last_used": "2026-07-28T00:18:35",
+      "use_count": 2
+    },
+    "c1ff018e": {
+      "name": "ps aux",
+      "template": "ps aux",
+      "context": {
+        "level": "SIMPLE",
+        "elapsed_ms": 95
+      },
+      "created": "2026-07-28T00:18:35",
+      "last_used": "2026-07-28T00:18:35",
+      "use_count": 2
+    },
+    "ce7312e3": {
+      "name": "ls -la",
+      "template": "ls -la",
+      "context": {
+        "level": "TRIVIAL",
+        "elapsed_ms": 155
+      },
+      "created": "2026-07-28T00:18:35",
+      "last_used": "2026-07-28T00:18:35",
+      "use_count": 2
+    },
+    "a0332131": {
+      "name": "echo hello",
+      "template": "echo hello",
+      "context": {
+        "level": "TRIVIAL",
+        "elapsed_ms": 185
+      },
+      "created": "2026-07-28T00:18:35",
+      "last_used": "2026-07-28T00:18:35",
+      "use_count": 1
+    },
+    "6bb50502": {
+      "name": "pkg list",
+      "template": "pkg list",
+      "context": {
+        "level": "TRIVIAL",
+        "elapsed_ms": 305
+      },
+      "created": "2026-07-28T00:18:35",
+      "last_used": "2026-07-28T00:18:35",
+      "use_count": 1
+    }
+  },
+  "meta": {
+    "version": 1,
+    "last_sync": "2026-07-28T00:18:42"
+  }
+}
