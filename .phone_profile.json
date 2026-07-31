@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "total_commands": 15,
+    "unique_commands": 6,
+    "first_seen": "2026-07-27T08:00:00",
+    "last_seen": "2026-07-29T19:33:00"
+  },
+  "work_patterns": {
+    "peak_hours": [
+      "08:00(2次)",
+      "09:00(2次)",
+      "10:00(2次)"
+    ],
+    "active_days": [
+      [
+        "Mon",
+        5
+      ],
+      [
+        "Tue",
+        5
+      ],
+      [
+        "Wed",
+        5
+      ]
+    ],
+    "sessions": 15,
+    "avg_cmds_per_session": 1.0
+  },
+  "command_heatmap": {
+    "top_commands": [
+      [
+        "echo",
+        3
+      ],
+      [
+        "whoami",
+        3
+      ],
+      [
+        "free",
+        3
+      ],
+      [
+        "ps",
+        2
+      ],
+      [
+        "pkg",
+        2
+      ],
+      [
+        "ls",
+        2
+      ]
+    ],
+    "by_level": {
+      "TRIVIAL": {
+        "count": 6,
+        "ok_rate": "83%",
+        "avg_ms": 170
+      },
+      "SIMPLE": {
+        "count": 6,
+        "ok_rate": "67%",
+        "avg_ms": 230
+      },
+      "COMPLEX": {
+        "count": 3,
+        "ok_rate": "67%",
+        "avg_ms": 275
+      }
+    }
+  },
+  "risk_profile": {
+    "style": "平稳日常型",
+    "high_risk_attempts": 0,
+    "blocked": 0,
+    "retry_rate": "26.7%"
+  },
+  "efficiency": {
+    "success_rate": "73.3%",
+    "avg_latency_ms": 215,
+    "redundant_commands": 0,
+    "redundant_rate": "0.0%"
+  },
+  "knowledge": {
+    "learned_facts": 5,
+    "sources": {
+      "yuanbao": 5
+    }
+  },
+  "recommendations": [
+    "重试率 27%，检查网络稳定性或调整超时参数",
+    "高频命令 'echo'（3次），可设别名加速",
+    "检测到 15 个会话，建议设置定时任务自动化重复工作"
+  ],
+  "_generated": "2026-07-28T00:18:35",
+  "_generated_epoch": 1785169115.725535,
+  "_data_points": 15
+}
