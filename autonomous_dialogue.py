@@ -29,7 +29,7 @@ sys.path.insert(0, PROJECT_DIR)
 from phone_system.ocr_pipeline import OCRPipeline
 
 # ─── 配置 ───
-GITEE_TOKEN = "be94810b75731a166c301f752d5348e8"
+GITEE_TOKEN = "os.environ.get("GITEE_TOKEN","")"
 GITEE_OWNER = "wagziqag"
 GITEE_REPO = "phone-automation-system"
 API_BASE = f"https://gitee.com/api/v5/repos/{GITEE_OWNER}/{GITEE_REPO}"
