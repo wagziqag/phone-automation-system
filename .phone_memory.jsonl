@@ -1,0 +1,18 @@
+{"ts": "2026-07-27T08:00:00", "cmd": "echo hello", "level": "TRIVIAL", "ok": false, "elapsed_ms": 5, "attempts": 2}
+{"ts": "2026-07-27T09:03:00", "cmd": "whoami", "level": "TRIVIAL", "ok": true, "elapsed_ms": 35, "attempts": 1}
+{"ts": "2026-07-27T10:06:00", "cmd": "free -h", "level": "SIMPLE", "ok": true, "elapsed_ms": 65, "attempts": 1}
+{"ts": "2026-07-27T11:09:00", "cmd": "ps aux", "level": "SIMPLE", "ok": true, "elapsed_ms": 95, "attempts": 1}
+{"ts": "2026-07-27T12:12:00", "cmd": "pkg list", "level": "COMPLEX", "ok": false, "elapsed_ms": 125, "attempts": 2}
+{"ts": "2026-07-28T13:15:00", "cmd": "ls -la", "level": "TRIVIAL", "ok": true, "elapsed_ms": 155, "attempts": 1}
+{"ts": "2026-07-28T14:18:00", "cmd": "echo hello", "level": "TRIVIAL", "ok": true, "elapsed_ms": 185, "attempts": 1}
+{"ts": "2026-07-28T15:21:00", "cmd": "whoami", "level": "SIMPLE", "ok": true, "elapsed_ms": 215, "attempts": 1}
+{"ts": "2026-07-28T16:24:00", "cmd": "free -h", "level": "SIMPLE", "ok": false, "elapsed_ms": 245, "attempts": 2}
+{"ts": "2026-07-28T17:27:00", "cmd": "ps aux", "level": "COMPLEX", "ok": true, "elapsed_ms": 275, "attempts": 1}
+{"ts": "2026-07-29T18:30:00", "cmd": "pkg list", "level": "TRIVIAL", "ok": true, "elapsed_ms": 305, "attempts": 1}
+{"ts": "2026-07-29T19:33:00", "cmd": "ls -la", "level": "TRIVIAL", "ok": true, "elapsed_ms": 335, "attempts": 1}
+{"ts": "2026-07-29T08:36:00", "cmd": "echo hello", "level": "SIMPLE", "ok": false, "elapsed_ms": 365, "attempts": 2}
+{"ts": "2026-07-29T09:39:00", "cmd": "whoami", "level": "SIMPLE", "ok": true, "elapsed_ms": 395, "attempts": 1}
+{"ts": "2026-07-29T10:42:00", "cmd": "free -h", "level": "COMPLEX", "ok": true, "elapsed_ms": 425, "attempts": 1}
+{"ts": "2026-07-28T21:00:12", "cmd": "test_1785243612", "level": "TRIVIAL", "ok": true, "elapsed_ms": 5, "attempts": 1}
+{"ts": "2026-07-28T21:00:34", "cmd": "test_1785243634", "level": "TRIVIAL", "ok": true, "elapsed_ms": 5, "attempts": 1}
+{"ts": "2026-07-28T21:02:23", "cmd": "test_1785243743", "level": "TRIVIAL", "ok": true, "elapsed_ms": 5, "attempts": 1}
