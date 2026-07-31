@@ -379,7 +379,7 @@ class AutonomousAgent:
             "app": package,
             "app_info": app_info,
             "screens_explored": len(screens_explored),
-            "total_actions": sum(len(s["actions_tested"]) for s in screens_explored),
+            "total_actions": sum(len(s["actions_tested"])) for s in screens_explored),
             "duration_seconds": round(duration, 1),
             "screens": screens_explored,
         }
