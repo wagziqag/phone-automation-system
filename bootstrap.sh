@@ -1,5 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # Bootstrap: one command to start everything
+import os
 echo "=== Marvis Bootstrap ==="
 cd ~
 
@@ -40,7 +41,7 @@ echo "=== Stunnel ready ==="
 
 # Pull poller from Gitee
 echo "Pulling poller..."
-curl -sk "https://gitee.com/api/v5/repos/wagziqag/phone-automation-system/contents/poller_v9.py?access_token=be94810b75731a166c301f752d5348e8" | python3 -c "import sys,json,base64; d=json.load(sys.stdin); print(base64.b64decode(d['content']).decode())" > ~/poller_v9.py
+curl -sk "https://gitee.com/api/v5/repos/wagziqag/phone-automation-system/contents/poller_v9.py?access_token=" + os.environ.get("GITEE_TOKEN", "") + "" | python3 -c "import sys,json,base64; d=json.load(sys.stdin); print(base64.b64decode(d['content']).decode())" > ~/poller_v9.py
 
 echo "Starting poller..."
 nohup python3 ~/poller_v9.py > ~/poller.log 2>&1 &
